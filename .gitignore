@@ -1,0 +1,9 @@
+# Per-machine include for monitors/workspaces (see scripts/set-host.sh)
+hypr/.config/hypr/hosts/local.conf
+
+# Editor / OS noise
+*.swp
+.DS_Store
+
+# Optional machine-local II state (never commit keys)
+illogical-impulse/.config/illogical-impulse/installed_listfile
