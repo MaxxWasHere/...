@@ -21,6 +21,9 @@ echo "Backup at $BACK"
 
 if [[ ! -d "$REPO_PATH/.git" ]]; then
   git clone "$REPO_URL" "$REPO_PATH"
+else
+  echo "Repo already exists at $REPO_PATH — pulling latest"
+  git -C "$REPO_PATH" pull --ff-only || true
 fi
 
 "$REPO_PATH/scripts/install.sh"
