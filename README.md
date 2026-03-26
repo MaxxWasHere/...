@@ -4,14 +4,16 @@ Tracked: `hypr/custom`, `hypr/ricing`, `hypr/hyprland.conf`, `hypr/hosts`, `illo
 
 ## Install (one command)
 
+The repo name is three dots (`...`). In `curl`, the **raw** URL must encode that as **`%2E%2E%2E`** or GitHub returns 404.
+
 ```bash
-curl -fsSL 'https://raw.githubusercontent.com/MaxxWasHere/.../main/scripts/install-from-github.sh' | bash
+curl -fsSL 'https://raw.githubusercontent.com/MaxxWasHere/%2E%2E%2E/main/scripts/install-from-github.sh' | bash
 ```
 
 Optional: set clone dir, repo URL, and host profile in one go:
 
 ```bash
-DOTFILES_HOST=desktop curl -fsSL 'https://raw.githubusercontent.com/MaxxWasHere/.../main/scripts/install-from-github.sh' | bash
+DOTFILES_HOST=desktop curl -fsSL 'https://raw.githubusercontent.com/MaxxWasHere/%2E%2E%2E/main/scripts/install-from-github.sh' | bash
 ```
 
 | Variable | Default | Meaning |
